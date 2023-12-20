@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Soni Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.12"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(1, 1, 36);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(5, 5, 70);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+
+        }
+
+        nav ul li a:hover{
+            color: palevioletred;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .right img {
+            max-width: 10%; /* Adjust the max-width to make the image smaller */
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection div {
+            width: 40%; /* Increased width */
+            padding: 20px;
+        }
+
+        .leftSection {
+            
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .rightSection {
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .anshImage {
+            width: 120%;
+            height: auto;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        a{
+            list-style: none;
+        }
+
+        #element{
+            color: blueviolet;
+
+        }
+
+        .sectionSection{
+            max-width: 80vw;
+            margin: auto;
+
+        }
+
+        .work {
+            margin-left: 70px;
+            margin-top: 15px;
+        }
+
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+        .workImage {
+            margin-left: 80px;
+            width: 50px;
+            height: auto;
+        }
+
+        .icon {
+            float: right;
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+
+        .workContent {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            Ansh Soni's Portfolio
+        </div>
+
+        <div class="right">
+            <ul>
+                <li><a href="C:\Data\workspace\My Portfolio website\about.html">Home</a></li>
+                <li><a href="C:\Data\workspace\My Portfolio website\about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h1>Hello, I'm <span class="purple">Ansh Soni</span>,</h1>
+                <h2>A passionate Computer Science Engineering student. <br> I am proud to be associated with PDEU <br>(Pandit Deendayal Energy University) Gandhinagar.</h2>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection">
+                <img src="https://miro.medium.com/v2/resize:fit:900/1*mTJIqHD3eoC437BF3hybHQ.png"  class="anshImage">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondSection">
+            <h1 class="work">WORK EXPERIENCE</h1><br><br><br>
+            <div class="workContent">
+                <img src="https://cdn-icons-png.flaticon.com/512/10488/10488328.png" class="workImage">
+                <h3 class="icon"> CSE NewLetter as Graphic Designer</h3>
+                <br>
+                
+                <img src="https://cdn-icons-png.flaticon.com/512/10488/10488328.png" class="workImage">
+                <h3 class="icon"> University club Graphic Designer</h3>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/10488/10488328.png" class="workImage">
+                <h3 class="icon"> GTU Siksha On Wheels Project GD</h3>
+
+                
+            </div>
+        </section>
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['A WEB DEVELOPER', 'GRAPHIC DESIGNER','VIDEO EDITTOR'],
+          typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Soni Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.12"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(1, 1, 36);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(5, 5, 70);
+            padding: 10px 0;
+            z-index: 1;
+            height: 80px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: palevioletred;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .heading {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: #9e1892;
+            margin: 20px 0;
+        }
+
+        .gallery,
+        .gallery2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            overflow-x: scroll;
+        }
+
+        .image {
+            width: 200px; 
+            height: auto; 
+            max-width: 100%; 
+            object-fit: cover; 
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+
+        .btn {
+            font-size: 24px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .btn-prev {
+            margin-right: 10px;
+        }
+
+        .btn-next {
+            margin-left: 10px;
+        }
+        .pdf-container-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .pdf-container,
+        .pdf-container2 {
+            width: 40vw;
+            height: 60vh;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: auto;
+        }
+
+        .pdf-container2 {
+            height: 60vh;
+            margin-right: 40px;
+        }
+
+        .pdf-container embed,
+        .pdf-container2 embed {
+            width: 100%;
+            height: 100%;
+        }
+
+        .ppt1{
+            width:40%;
+            height:400px;
+        }
+
+        .ppt2{
+            width: 40%;
+            float:right;
+            margin-right: 40px;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            Ansh Soni's Portfolio
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="heading">FESTIVAL POST</h1>
+        <div class="gallery">
+            <button class="btn btn-prev" onclick="prevImage()">❮</button>
+            <div class="image-container">
+                <video class="image" src="C:\Data\workspace\My Portfolio website\festival 1.mp4" alt="Video 1" controls autoplay></video>
+                <video class="image" src="C:\Data\workspace\My Portfolio website\festival 2.mp4" alt="Video 2" controls autoplay></video>
+                <video class="image" src="C:\Data\workspace\My Portfolio website\festival 3.mp4" alt="Video 3" controls autoplay></video>
+                <video class="image" src="C:\Data\workspace\My Portfolio website\festival 4.mp4" alt="Video 4" controls autoplay></video>
+                <video class="image" src="C:\Data\workspace\My Portfolio website\festival 5.mp4" alt="Video 5" controls autoplay></video>
+                <image class="image" src="C:\Data\workspace\My Portfolio website\festival 6.jpg" alt="image 6"></image>
+            </div>
+            <button class="btn btn-next" onclick="nextImage()">❯</button>
+        </div>
+
+        <h1 class="heading">LOGO'S</h1>
+        <div class="gallery2">
+            <button class="btn btn-prev" onclick="prevLogo()">❮</button>
+            <div class="image-container logos-container">
+                <img class="image" src="C:\Data\workspace\My Portfolio website\logo 1.png" alt="Logo 1">
+                <img class="image" src="C:\Data\workspace\My Portfolio website\logo 2.png" alt="Logo 2">
+                <video class="image" src="C:\Data\workspace\My Portfolio website\logo 3.mp4" alt="Logo 3" controls autoplay></video>
+                <img class="image" src="C:\Data\workspace\My Portfolio website\logo 4.png" alt="Logo 4">
+            </div>
+            <button class="btn btn-next" onclick="nextLogo()">❯</button>
+        </div>
+
+        <h1 class="heading">COMMERCIAL PRAMOTIONS</h1>
+        <div class="gallery2">
+            <button class="btn btn-prev" onclick="prevPoster()">❮</button>
+            <div class="image-container posters-container">
+                <video class="image" src="C:\Data\workspace\My Portfolio website\cp 1.mp4" alt="video 1" controls autoplay></video>
+                <video class="image" src="C:\Data\workspace\My Portfolio website\cp 4.mp4" alt="video 1" controls autoplay></video>
+                
+                <image class="image" src="C:\Data\workspace\My Portfolio website\cp 2.png" alt="Poster 3" ></image>
+                <video class="image" src="C:\Data\workspace\My Portfolio website\cp 3.mp4" alt="video 1" controls autoplay></video>
+                <img class="image" src="C:\Data\workspace\My Portfolio website\cp 5.png" alt="Poster 5">
+                <img class="image" src="C:\Data\workspace\My Portfolio website\cp 6.png" alt="Poster 5">
+
+
+            </div>
+            <button class="btn btn-next" onclick="nextPoster()">❯</button>
+        </div>
+    </div>
+
+    <h1 class="heading">EVENT POSTERS</h1>
+        <div class="gallery2">
+            <button class="btn btn-prev" onclick="prevPoster()">❮</button>
+            <div class="image-container posters-container">
+                <img class="image" src="C:\Data\workspace\My Portfolio website\ep 1.png" alt="Poster 1">
+                <img class="image" src="C:\Data\workspace\My Portfolio website\ep 2.png" alt="Poster 2">
+
+                <img class="image" src="C:\Data\workspace\My Portfolio website\ep 6.png" alt="Poster 2">
+                <image class="image" src="C:\Data\workspace\My Portfolio website\ep 3.png" alt="Poster 3" ></image>
+                <img class="image" src="C:\Data\workspace\My Portfolio website\ep 4.png" alt="Poster 4">
+                <img class="image" src="C:\Data\workspace\My Portfolio website\ep 5.jpg" alt="Poster 5">
+
+            </div>
+            <button class="btn btn-next" onclick="nextPoster()">❯</button>
+        </div>
+
+    </div>
+
+    <h1 class="heading">DOCUMENT'S DESIGNED</h1>
+
+    <div class="pdf-container-wrapper">
+        <div class="pdf-container">
+            <embed src="C:\Data\workspace\My Portfolio website\EVENTS LIST.pdf" type="application/pdf" />
+        </div>
+        
+        <div class="pdf-container2">
+            <embed src="C:\Data\workspace\My Portfolio website\Newsletter.pdf" type="application/pdf" />
+        </div>
+    </div>
+
+    <h1 class="heading">PRESENTATIONS MADE</h1>
+
+    <video src="C:\Data\workspace\My Portfolio website\ppt 1.mp4" class="ppt1" controls autoplay></video>
+
+    <video src="C:\Data\workspace\My Portfolio website\ppt 2.mp4" class="ppt2" controls autoplay></video>
+
+
+    <script>
+        let currentImageIndex = 0;
+        let currentLogoIndex = 0;
+        let currentPosterIndex = 0;
+
+        function showImage(index, containerClass) {
+            const imageContainer = document.querySelector(`.${containerClass}`);
+            const images = imageContainer.querySelectorAll('.image');
+            const maxIndex = images.length - 1;
+
+            
+            const currentIndex = Math.min(Math.max(index, 0), maxIndex);
+
+            const translateValue = -currentIndex * 220 + 'px'; 
+            imageContainer.style.transform = 'translateX(' + translateValue + ')';
+        }
+
+        function prevImage() {
+            showImage(--currentImageIndex, 'image-container');
+        }
+
+        function nextImage() {
+            showImage(++currentImageIndex, 'image-container');
+        }
+
+        function showLogo(index) {
+            showImage(index, 'logos-container');
+        }
+
+        function prevLogo() {
+            showImage(--currentLogoIndex, 'logos-container');
+        }
+
+        function nextLogo() {
+            showImage(++currentLogoIndex, 'logos-container');
+        }
+
+        function showPoster(index) {
+            showImage(index, 'posters-container');
+        }
+
+        function prevPoster() {
+            showImage(--currentPosterIndex, 'posters-container');
+        }
+
+        function nextPoster() {
+            showImage(++currentPosterIndex, 'posters-container');
+        }
+    </script>
+</body>
+</html>
